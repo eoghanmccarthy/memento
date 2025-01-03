@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const bookmarkList = document.getElementById('bookmarkList');
 
     // Get all bookmarks
-    chrome.bookmarks.getRecent(10, (bookmarks) => {
+    chrome.bookmarks.getRecent(15, (bookmarks) => {
         bookmarks.forEach(bookmark => {
             const li = document.createElement('li');
             li.className = 'bookmark-item';
